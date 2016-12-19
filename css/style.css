@@ -19,6 +19,8 @@ body {
 }
 
 .panel {
+  display: flex;
+  flex-direction: column;
   background:#6B0F9C;
   box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
   color:white;
@@ -36,6 +38,8 @@ body {
   /*each panel only takes up width of content, flex 1 allows them to
   equally distribute remaining viewport width*/
   flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -49,6 +53,10 @@ body {
   margin:0;
   width: 100%;
   transition:transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .panel p {
